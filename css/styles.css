@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    max-width: 700px;
+    margin: 1.5rem;
+    margin-right: 2.25rem;
+
+    background-color: #424242;
+}
+
+a {
+    font-weight: 700;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+h2 {
+    margin-top: .4rem;
+}
+
+h3 {
+    margin-bottom: .2rem;
+}
+
+p, li, a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    max-width: 100ch;
+    color: #ADADAD;
+    margin-top: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    color: #848484;
+}
+
+li:has(a) {
+    margin-bottom: .5rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+p span, li span {
+    justify-content: end;
+}
+
+footer p {
+    max-width: 110ch;
+    margin: auto;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.text-dark {
+    color: #848484;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rev-col {
+    flex-direction: column-reverse;
+}
+
+.rev-row {
+    flex-direction: row-reverse;
+}
+
+.col-1 {
+    grid-column: 1;
+}
+
+.col-1 div {
+    z-index: 1;
+}
+
+.col-1 section, .col-2 aside {
+    margin-bottom: -.8rem;
+}
+
+.col-2 {
+    grid-column: 2;
+    z-index: 3;
+}
+
+.col-1-2 {
+    grid-column: 1 / span 2;
+    overflow: hidden;
+    max-height: 290px;
+}
+
+.col-1-2 img {
+    height: 175%;
+    width: 100%;
+    object-fit: none;
+    vertical-align: top;
+}
+
+@media screen and (min-width: 600px) {
+    
+    body {
+        margin: auto;
+        margin-top: 2.5rem;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 475px 225px;
+    }
+
+    .col-1 {
+        max-width: 600px;
+    }
+
+    .col-2 {
+        margin-left: -1rem;
+    }
+}
+
+.shd-y {
+    background-color: #525252;
+    border: .1rem solid black;
+    transform: skewY(45deg);
+    min-width: 1.6rem;
+
+    margin-top: .7rem;
+    margin-bottom: 1.1rem;
+
+    margin-right: -3rem;
+}
+
+@media screen and (min-width: 600px) {
+    
+    .shd-y {
+        min-width: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-right: 0;
+    }
+}
+
+.shd-x {
+    background-color: #313131;
+    border: .1rem solid black;
+    border-right: 0;
+    transform: skewX(45deg);
+    min-height: 2rem;
+
+    margin-left: 1rem;
+    margin-right: -1rem;
+}
+
+.box-borders {
+    border-left: .1rem solid black;
+    border-top: .1rem solid black;
+}
+
+.box-title {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-basis: 1ch;
+
+    background-color: #737373;
+}
+
+.box-title h1, .box-title h2 {
+    font-family: "Volter", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: .7rem;
+    writing-mode: vertical-lr;
+    transform: scale(-1, -1);
+    
+    filter: grayscale(100%);
+}
+
+@media screen and (min-width: 600px) {
+    .box-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-auto-rows: 1fr;
+        
+        gap: 1rem;
+    }
+
+    .box-title h1, .box-title h2 {
+        font-size: .9rem;
+    }
+}
+
+.box-content-area {
+    background-color: #262626;
+    padding: 1rem;
+}
+
+.box-content-area img {
+    width: initial;
+    height: initial;
+}
+
+.aside-title {
+    background-color: #737373;
+    padding: .1rem;
+}
+
+.aside-title img {
+    display: block;
+    width: initial;
+    margin: auto;
+}
+
+.aside-content {
+    background-color: black;
+    padding: 1rem;
+}
+
+.aside-content h2, .aside-content h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ADADAD;
+}
+
+.divider {
+    background-color: #424242;
+    border-left: .1rem solid black;
+    min-height: .8rem;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.of-hide {
+    overflow: hidden;
+}
+
+.of-hide img {
+    width: auto;
+}
+
+/* .habbo-origins-logo {
+    background-image: url(https://images.habbo.com/habbo-web/origins-america/en/assets/images/sprite.57fd003b.png);
+    background-position: 0 0;
+    width: 164px;
+    height: 215px;
+    display: block;
+    margin: 0 auto;
+    zoom: 1;
+} */
