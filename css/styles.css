@@ -105,7 +105,7 @@ img {
     display: none;
 }
 
-@media (min-width: 420px) {
+@media screen and (min-width: 420px) {
 
     .hidden {
         display: initial;
@@ -113,7 +113,7 @@ img {
 
 }
 
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
 
     .hidden {
         display: none;
@@ -232,7 +232,7 @@ img {
     filter: grayscale(100%);
 }
 
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
 
     .box-grid {
         display: grid;
