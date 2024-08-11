@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/volter.css">
+    <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Document</title>
+    <title>Habbo Hotel - Home</title>
 </head>
 <body>
     <main class="flex-col grid">
@@ -15,15 +15,21 @@
                 <div class="flex-col">
                     <div class="flex-row">
                         <div class="box-title box-borders">
-                            <h2>Welcome to Habbo Hotel</h2>
+                            <h2>About Habbo Hotel</h2>
                         </div>
-                        <div class="box-grid box-borders flex-col rev-col">
-                            <div class="col-1-2">
-                                <img src="img/hero.png">
-                            </div>
+                        <div class="bg-hero box-grid box-borders flex-col flex-grow">
+                            <div class="col-1">
+                                <div class="flex-row flex-spaced resize">
+                                    <img src="./img/habbo-hotel.gif">
+                                    <img class="hidden" src="./img/badge.gif">
+                                </div>
+                                <p style="opacity: 0;">Introducing Grand Habbo Hotel! Yes, a luxurious five star hotel on the net. Click on the button to enter the hotel.</p>
 
-                            <div class="absolute">
-                                <img src="./img/habbo-hotel.gif">
+                            </div>
+                            <div class="col-2 flex-col flex-end">
+                                <div class="hidden-2"><img src="./img/badge.gif"></div>
+                                <div><img src="./img/arrow.gif"></div>
+                                <div class="button"><img src="./img/go-btn.gif"></div>
                             </div>
                         </div>
                     </div>
@@ -38,8 +44,8 @@
                         <div class="box-title box-borders">
                             <h2>About Habbo Hotel</h2>
                         </div>
-                        <div class="box-grid gap-1 box-borders flex-col rev-col">
-                            <div class="col-1 box-content-area">
+                        <div class="box-grid box-borders flex-col rev-col">
+                            <div class="col-1 box-content">
                                 <p>	Habbo Hotel is a chill-out space where you can hang out with your friends. Guests are represented in the hotel by a personal figure called a Habbo. This hotel is primarily for teens in the UK, but everyone is welcome.</p>
                                 <p><a href="#">Go on a tour of the hotel</a> > ></p>
                             </div>
@@ -59,11 +65,11 @@
                         <div class="box-title box-borders">
                             <h2>Shockwave plug-in</h2>
                         </div>
-                        <div class="box-grid gap-1 box-borders flex-col rev-col">
+                        <div class="box-grid box-borders flex-col rev-col">
                             <div class="col-1">
                                 <img src="img/habbo-card-2.gif">
                             </div>
-                            <div class="col-2 box-content-area">
+                            <div class="col-2 box-content">
                                 <p><strong>Shockwave plug-in needed</strong></p>
                                 <p>You need Macromedia's Director Shockwave plug-in to access Habbo Hotel. If you don't have it already, you can download it by clicking <a href="">here</a>.</p>
                                 <img src="img/get_shockwave.gif">
@@ -76,9 +82,9 @@
             </section>
 
         </div>
-        <div class="col-2">
+        <div class="col-2 overlap-left">
             <aside class="flex-row">
-                <div class="flex-col">
+                <div class="flex-col flex-grow">
 
                     <div class="aside-title box-borders">
                         <img src="./img/habbo.gif" height="20" width="55">
@@ -98,7 +104,7 @@
                     <div class="divider"></div>
 
                     <div class="aside-content box-borders">
-                        <p><strong>Habbos currently visiting:</strong> 354</p>
+                        <p>Habbos currently visiting: 354</p>
                         <ul class="flex-col">
                             <li>Private rooms <span>183</span></li>
                             <li>Main Lobby<span>17</span></li>
@@ -113,7 +119,7 @@
                             <li>The Dirty Duck Pub<span>6</span></li>
                             <li>Front page<span>55</span></li>
                         </ul>
-                        <p class="flex-row"><a href="#">Who?</a><span><a href="#">Refresh</a></span></p>
+                        <p class="flex-row flex-spaced"><a href="#">Who?</a><span><a href="#">Refresh</a></span></p>
                     </div>
 
                     <div class="divider"></div>
@@ -121,16 +127,16 @@
                     <div class="aside-content box-borders">
                         <h2>News and updates</h2>
 
-                        <h3>19th June 2024</h3>
-                        <p class="text-dark">Habbo Hotel Origins is launched.</p>
+                        <p>19th June 2024</p>
+                        <p>Habbo Hotel Origins is launched.</p>
 
-                        <h3>24th January 2001</h3>
-                        <p class="text-dark">Habbohotel.com front page opens.</p>
+                        <p>24th January 2001</p>
+                        <p>Habbohotel.com front page opens.</p>
 
-                        <h3>16th January 2001</h3>
-                        <p class="text-dark">Grand Habbo Hotel public beta launched!</p>
+                        <p>16th January 2001</p>
+                        <p>Grand Habbo Hotel public beta launched!</p>
 
-                        <p><a href="#">Read the latest newsletter</a> > ></p>
+                        <p style="margin-bottom: 1.1rem;"><a href="#">Read the latest newsletter</a> > ></p>
                     </div>
 
                     <div class="shd-x">&nbsp;</div>
@@ -140,8 +146,8 @@
         </div>
     </main>
     
-    <footer class="grid">
-        <div class="col-1-2">
+    <footer class="flex-col">
+        <div>
             <p>All rights including trademarks, copyright and database rights in this website and its contents are owned by or licensed to Habbo Ltd. All rights are reserved. Powered by Sulake technology</p>
         </div>
     </footer>

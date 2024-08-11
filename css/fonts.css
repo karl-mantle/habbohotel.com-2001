@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "Verdana";
+    src: url("../fonts/verdana.ttf") format('ttf'),
+         url("../fonts/verdana.woff2") format('woff2'),
+         url("../fonts/verdana.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Verdana";
+    src: url("../fonts/verdana-bold.ttf") format('ttf'),
+         url("../fonts/verdana-bold.woff2") format('woff2'),
+         url("../fonts/verdana-bold.woff") format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Volter";
+    src: url("../fonts/volter-goldfish.tff") format('ttf'),
+         url("../fonts/volter-goldfish.woff2") format('woff2'),
+         url("../fonts/volter-goldfish.woff") format('woff'),
+         url("../fonts/volter-goldfish.svg#volter_goldfish") format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
